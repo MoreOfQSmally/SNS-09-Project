@@ -38,7 +38,6 @@ Binary Tree
 /* Bytes do something with the amount of data banks is what is in the SNS-16
 /* This Mini-Computer only has limited memory so do something otherwise that wastes RAM or any general-purpose memory bank styled module is enough
 /* Inturupts would be handled through ROM due to it's massive size of read-only memory which means it has an enrichment in it
-/* Considering it's size, It looks to be slow but it won't, it's faste(r) then the CPU's that are mostly on any social media platform
 /* It will only do immediates through ROM Version 1.0
 
 CF/Carry-Flag
