@@ -130,7 +130,7 @@ int main(void) {
     inb = FALSE ? js_var_from_array(tmp_array) : inb;
     count = 0;
     for (;count < 2;count++)
-        list->data[list->size - 1] = /* Unsupported element access scenario: Math floor */(2);
+        list->data[list->size - 1] = (2);
     outb = TRUE;
     free(tmp_array->data);
     free(tmp_array);
@@ -217,7 +217,7 @@ struct js_var js_var_get(struct js_var v, struct js_var arg) {
            free((void *)key);
         return tmp;
     } else if (v.type == JS_VAR_NULL || v.type == JS_VAR_UNDEFINED) {
-        ARRAY_PUSH(err_defs, "TypeError: Cannot read property of null or undefined");
+        ARRAY_PUSH(err_defs);
         THROW(err_defs->size);
     } else
         return js_var_from(JS_VAR_UNDEFINED);
@@ -258,7 +258,7 @@ int main(void) {
     inb = FALSE ? js_var_from_array(tmp_array) : inb;
     count = 0;
     for (;count <2;count++)
-        list->data[list->size - 1] = /* Unsupported element access scenario: Math floor */(2);
+        list->data[list->size - 1] = (2);
     outb = TRUE;
     for (i = 1;i <= 10;(i = i +5))
         list->data[1] = 2 + 0;
